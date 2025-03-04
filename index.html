@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Burhan Ali</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Full-Page Background -->
+    <div class="page-background">
+        <div class="page-particles"></div>
+        <svg class="page-wave" viewBox="0 0 1440 300" preserveAspectRatio="none">
+            <path
+                d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,133.3C672,117,768,107,864,122.7C960,139,1056,181,1152,186.7C1248,192,1344,160,1392,144L1440,128L1440,300L1392,300C1344,300,1248,300,1152,300C1056,300,960,300,864,300C768,300,672,300,576,300C480,300,384,300,288,300C192,300,96,300,48,300L0,300Z">
+            </path>
+        </svg>
+        <div class="page-grid"></div>
+        <div class="page-glow"></div>
+    </div>
+    <div class="page-floaters">
+        <span class="page-floater" data-shape="tetrahedron"></span>
+        <span class="page-floater" data-shape="cube"></span>
+        <span class="page-floater" data-shape="sphere"></span>
+        <span class="page-floater" data-shape="prism"></span>
+    </div>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+            <div class="nav-logo">Burhan Ali</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" tabindex="0" aria-label="Menu" role="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="nav-indicator"></div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Greetings, I’m</span>
+                        <span class="title-line highlight" data-text="Burhan Ali">Burhan Ali</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        <span class="subtitle-text">Visionary Creator</span>
+                        <span class="subtitle-text"> | </span>
+                        <span class="subtitle-text">Master of Code, AI & Design</span>
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="primary-button" aria-label="Explore My Work">
+                            <span class="button-text">Discover My Universe</span>
+                            <svg class="button-icon" width="20" height="20">
+                                <path d="M5 10h10m-5-5l5 5-5 5" fill="none" stroke="#fff" stroke-width="2" />
+                            </svg>
+                        </button>
+                        <button class="secondary-button" aria-label="Contact Me">
+                            <span class="button-text">Initiate Contact</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="image-wrapper">
+                        <img src="profile.jpg" alt="Burhan Ali Profile Image" class="hero-profile" loading="lazy"
+                            onerror="this.src='fallback-profile.jpg';">
+                        <div class="image-glow"></div>
+                        <div class="image-hologram"></div>
+                    </div>
+                    <div class="image-orbit">
+                        <span class="orbit-particle particle-1"></span>
+                        <span class="orbit-particle particle-2"></span>
+                        <span class="orbit-particle particle-3"></span>
+                        <span class="orbit-particle particle-4"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-particles"></div>
+            <div class="hero-floaters">
+                <span class="floater floater-1" data-shape="cube"></span>
+                <span class="floater floater-2" data-shape="sphere"></span>
+                <span class="floater floater-3" data-shape="prism"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-header">
+                    <h2 class="about-title">
+                        <span class="title-part">About</span>
+                        <span class="title-part highlight" data-text="Me">Me</span>
+                    </h2>
+                    <div class="about-subtitle">
+                        <span class="subtitle-text">A Journey Through Innovation & Excellence</span>
+                    </div>
+                </div>
+                <div class="about-main">
+                    <div class="about-text-container">
+                        <div class="text-card">
+                            <p class="about-bio">
+                                I’m Burhan Ali, a relentless innovator at the intersection of code, design, and
+                                artificial intelligence. With a passion for turning complex challenges into elegant
+                                solutions, I’ve spent years mastering Python, embedded systems, and AI-driven
+                                technologies.
+                            </p>
+                            <p class="about-bio">
+                                My mission is to craft experiences that inspire, leveraging open-source collaboration
+                                and cutting-edge tools to push the boundaries of what’s possible. Every project is a
+                                canvas—a chance to blend creativity with precision.
+                            </p>
+                        </div>
+                        <div class="text-orbit">
+                            <span class="orbit-dot dot-1"></span>
+                            <span class="orbit-dot dot-2"></span>
+                            <span class="orbit-dot dot-3"></span>
+                        </div>
+                    </div>
+                    <div class="about-stats-container">
+                        <div class="stats-wrapper">
+                            <div class="stat-card" data-stat="experience" data-info="Python, AI, IoT">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">Years of Experience</div>
+                                <div class="stat-reflection"></div>
+                            </div>
+                            <div class="stat-card" data-stat="projects" data-info="Web Apps, IoT Systems">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Projects Completed</div>
+                                <div class="stat-reflection"></div>
+                            </div>
+                            <div class="stat-card" data-stat="clients" data-info="Tech Startups, Enterprises">
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">Happy Clients</div>
+                                <div class="stat-reflection"></div>
+                            </div>
+                        </div>
+                        <div class="stats-hologram"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-floaters">
+                <span class="floater floater-1" data-shape="tetrahedron"></span>
+                <span class="floater floater-2" data-shape="cube"></span>
+                <span class="floater floater-3" data-shape="sphere"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="services-container">
+            <div class="services-header">
+                <h2 class="services-title">
+                    <span class="title-part">My</span>
+                    <span class="title-part highlight" data-text="Services">Services</span>
+                </h2>
+                <p class="services-subtitle">Unleashing Possibilities with Cutting-Edge Solutions</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-pod" data-service="python">
+                    <div class="pod-core">
+                        <i class="fas fa-code pod-icon"></i>
+                        <h3 class="pod-title">Python Development</h3>
+                        <div class="pod-core-glow"></div>
+                    </div>
+                    <div class="pod-overlay">
+                        <p class="pod-desc">Crafting scalable, efficient, and powerful applications using Python’s
+                            versatile ecosystem.</p>
+                        <div class="pod-holo-ring"></div>
+                        <div class="pod-energy-flow"></div>
+                    </div>
+                    <div class="pod-orbitals">
+                        <span class="orbital-ring ring-1"></span>
+                        <span class="orbital-ring ring-2"></span>
+                        <span class="orbital-particle particle-1"></span>
+                        <span class="orbital-particle particle-2"></span>
+                        <span class="orbital-particle particle-3"></span>
+                    </div>
+                    <div class="pod-connectors">
+                        <span class="connector-line line-1"></span>
+                        <span class="connector-line line-2"></span>
+                    </div>
+                </div>
+                <div class="service-pod" data-service="embedded">
+                    <div class="pod-core">
+                        <i class="fas fa-microchip pod-icon"></i>
+                        <h3 class="pod-title">Embedded Systems</h3>
+                        <div class="pod-core-glow"></div>
+                    </div>
+                    <div class="pod-overlay">
+                        <p class="pod-desc">Building IoT and automation solutions that connect the physical and digital
+                            worlds.</p>
+                        <div class="pod-holo-ring"></div>
+                        <div class="pod-energy-flow"></div>
+                    </div>
+                    <div class="pod-orbitals">
+                        <span class="orbital-ring ring-1"></span>
+                        <span class="orbital-ring ring-2"></span>
+                        <span class="orbital-particle particle-1"></span>
+                        <span class="orbital-particle particle-2"></span>
+                        <span class="orbital-particle particle-3"></span>
+                    </div>
+                    <div class="pod-connectors">
+                        <span class="connector-line line-1"></span>
+                        <span class="connector-line line-2"></span>
+                    </div>
+                </div>
+                <div class="service-pod" data-service="ai">
+                    <div class="pod-core">
+                        <i class="fas fa-robot pod-icon"></i>
+                        <h3 class="pod-title">AI Solutions</h3>
+                        <div class="pod-core-glow"></div>
+                    </div>
+                    <div class="pod-overlay">
+                        <p class="pod-desc">Harnessing machine learning and AI to create intelligent, future-ready
+                            systems.</p>
+                        <div class="pod-holo-ring"></div>
+                        <div class="pod-energy-flow"></div>
+                    </div>
+                    <div class="pod-orbitals">
+                        <span class="orbital-ring ring-1"></span>
+                        <span class="orbital-ring ring-2"></span>
+                        <span class="orbital-particle particle-1"></span>
+                        <span class="orbital-particle particle-2"></span>
+                        <span class="orbital-particle particle-3"></span>
+                    </div>
+                    <div class="pod-connectors">
+                        <span class="connector-line line-1"></span>
+                        <span class="connector-line line-2"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="services-background">
+                <div class="services-circuit-pattern"></div>
+                <svg class="services-wave" viewBox="0 0 1440 200" preserveAspectRatio="none">
+                    <path fill="var(--wave-fill-light)"
+                        d="M0,64L48,80C96,96,192,128,288,133.3C384,139,480,117,576,106.7C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,200L1392,200C1344,200,1248,200,1152,200C1056,200,960,200,864,200C768,200,672,200,576,200C480,200,384,200,288,200C192,200,96,200,48,200L0,200Z">
+                    </path>
+                </svg>
+                <div class="services-energy-field"></div>
+            </div>
+            <div class="services-floaters">
+                <span class="service-floater" data-shape="hexagon"></span>
+                <span class="service-floater" data-shape="octagon"></span>
+                <span class="service-floater" data-shape="dodecahedron"></span>
+            </div>
+        </div>
+    </section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <div class="skills-container">
+        <!-- Header -->
+        <div class="skills-header">
+            <h2 class="skills-title">
+                <span class="title-part">Cosmic</span>
+                <span class="title-part highlight" data-text="Skill Galaxy">Skill Galaxy</span>
+            </h2>
+            <p class="skills-subtitle">Orbiting Realms of Expertise</p>
+            <div class="skills-xp">
+                <span class="xp-label">Galaxy XP:</span>
+                <span class="xp-value">0</span>
+            </div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="skills-filter">
+            <button class="filter-btn active" data-category="all">All Planets</button>
+            <button class="filter-btn" data-category="programming">Programming</button>
+            <button class="filter-btn" data-category="frameworks">Frameworks</button>
+            <button class="filter-btn" data-category="tools">Tools</button>
+            <button class="filter-btn" data-category="soft">Soft Skills</button>
+        </div>
+
+        <!-- Skills Galaxy -->
+        <div class="skills-galaxy">
+            <!-- Skill Planet 1 -->
+            <div class="skill-planet" data-category="programming" data-level="90" data-xp="450"
+                data-projects="python-web, ai-chatbot">
+                <div class="planet-core">
+                    <svg class="planet-rings" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(89, 38, 239, 0.5)" stroke-width="4" />
+                        <circle cx="50" cy="50" r="35" fill="none" stroke="rgba(89, 38, 239, 0.3)" stroke-width="3" />
+                    </svg>
+                    <div class="planet-surface"></div>
+                    <div class="planet-glow"></div>
+                    <i class="fas fa-code planet-icon"></i>
+                    <h3 class="planet-title">Python</h3>
+                </div>
+                <div class="planet-overlay">
+                    <p class="planet-desc">Master of Python for web, AI, and automation.</p>
+                    <span class="planet-level">Orbit: 90%</span>
+                    <span class="planet-xp">XP: 450</span>
+                </div>
+                <div class="planet-moons">
+                    <span class="moon moon-1"></span>
+                    <span class="moon moon-2"></span>
+                    <span class="moon moon-3"></span>
+                </div>
+                <div class="planet-connections">
+                    <span class="connection-line line-1"></span>
+                    <span class="connection-line line-2"></span>
+                </div>
+            </div>
+
+            <!-- Skill Planet 2 -->
+            <div class="skill-planet" data-category="frameworks" data-level="85" data-xp="425"
+                data-projects="portfolio-website">
+                <div class="planet-core">
+                    <svg class="planet-rings" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(89, 38, 239, 0.5)" stroke-width="4" />
+                        <circle cx="50" cy="50" r="35" fill="none" stroke="rgba(89, 38, 239, 0.3)" stroke-width="3" />
+                    </svg>
+                    <div class="planet-surface"></div>
+                    <div class="planet-glow"></div>
+                    <i class="fab fa-react planet-icon"></i>
+                    <h3 class="planet-title">React</h3>
+                </div>
+                <div class="planet-overlay">
+                    <p class="planet-desc">Dynamic UIs with React mastery.</p>
+                    <span class="planet-level">Orbit: 85%</span>
+                    <span class="planet-xp">XP: 425</span>
+                </div>
+                <div class="planet-moons">
+                    <span class="moon moon-1"></span>
+                    <span class="moon moon-2"></span>
+                    <span class="moon moon-3"></span>
+                </div>
+                <div class="planet-connections">
+                    <span class="connection-line line-1"></span>
+                    <span class="connection-line line-2"></span>
+                </div>
+            </div>
+
+            <!-- Skill Planet 3 -->
+            <div class="skill-planet" data-category="tools" data-level="80" data-xp="400"
+                data-projects="iot-smart-home">
+                <div class="planet-core">
+                    <svg class="planet-rings" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(89, 38, 239, 0.5)" stroke-width="4" />
+                        <circle cx="50" cy="50" r="35" fill="none" stroke="rgba(89, 38, 239, 0.3)" stroke-width="3" />
+                    </svg>
+                    <div class="planet-surface"></div>
+                    <div class="planet-glow"></div>
+                    <i class="fas fa-tools planet-icon"></i>
+                    <h3 class="planet-title">Git</h3>
+                </div>
+                <div class="planet-overlay">
+                    <p class="planet-desc">Version control expertise with Git.</p>
+                    <span class="planet-level">Orbit: 80%</span>
+                    <span class="planet-xp">XP: 400</span>
+                </div>
+                <div class="planet-moons">
+                    <span class="moon moon-1"></span>
+                    <span class="moon moon-2"></span>
+                    <span class="moon moon-3"></span>
+                </div>
+                <div class="planet-connections">
+                    <span class="connection-line line-1"></span>
+                    <span class="connection-line line-2"></span>
+                </div>
+            </div>
+
+            <!-- Skill Planet 4 -->
+            <div class="skill-planet" data-category="soft" data-level="95" data-xp="475" data-projects="">
+                <div class="planet-core">
+                    <svg class="planet-rings" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(89, 38, 239, 0.5)" stroke-width="4" />
+                        <circle cx="50" cy="50" r="35" fill="none" stroke="rgba(89, 38, 239, 0.3)" stroke-width="3" />
+                    </svg>
+                    <div class="planet-surface"></div>
+                    <div class="planet-glow"></div>
+                    <i class="fas fa-users planet-icon"></i>
+                    <h3 class="planet-title">Teamwork</h3>
+                </div>
+                <div class="planet-overlay">
+                    <p class="planet-desc">Collaboration at its finest.</p>
+                    <span class="planet-level">Orbit: 95%</span>
+                    <span class="planet-xp">XP: 475</span>
+                </div>
+                <div class="planet-moons">
+                    <span class="moon moon-1"></span>
+                    <span class="moon moon-2"></span>
+                    <span class="moon moon-3"></span>
+                </div>
+                <div class="planet-connections">
+                    <span class="connection-line line-1"></span>
+                    <span class="connection-line line-2"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Custom Cursor -->
+        <div class="skill-cursor">
+            <div class="cursor-galaxy"></div>
+            <div class="cursor-text"></div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My <span class="highlight">Projects</span></h2>
+        <div class="project-gallery">
+            <div class="project-item" id="python-web">
+                <img src="projects/project1.png" alt="Python Web App" loading="lazy">
+                <div class="project-overlay">
+                    <h3>Python Web App</h3>
+                    <p>A scalable web application built with Flask.</p>
+                </div>
+            </div>
+            <div class="project-item" id="iot-smart-home">
+                <img src="projects/project2.png" alt="IoT Smart Home" loading="lazy">
+                <div class="project-overlay">
+                    <h3>IoT Smart Home</h3>
+                    <p>An embedded system for home automation.</p>
+                </div>
+            </div>
+            <div class="project-item" id="ai-chatbot">
+                <img src="projects/project3.png" alt="AI Chatbot" loading="lazy">
+                <div class="project-overlay">
+                    <h3>AI Chatbot</h3>
+                    <p>A conversational AI built with Python.</p>
+                </div>
+            </div>
+            <div class="project-item" id="portfolio-website">
+                <img src="projects/project4.png" alt="Portfolio Website" loading="lazy">
+                <div class="project-overlay">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive site showcasing my work.</p>
+                </div>
+            </div>
+        </div>
+        <button class="view-all">View All Projects</button>
+    </section>
+
+    <!-- Work Process Section -->
+    <section id="work-process">
+        <h2>My <span class="highlight">Work Process</span></h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon"><i class="fas fa-search"></i></div>
+                <div class="timeline-content">
+                    <h3>Research</h3>
+                    <p>Understanding goals and challenges.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon"><i class="fas fa-pencil-ruler"></i></div>
+                <div class="timeline-content">
+                    <h3>Planning</h3>
+                    <p>Creating a detailed project blueprint.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+                <div class="timeline-content">
+                    <h3>Development</h3>
+                    <p>Building the core solution.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon"><i class="fas fa-rocket"></i></div>
+                <div class="timeline-content">
+                    <h3>Launch</h3>
+                    <p>Deploying the final product.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What <span class="highlight">Clients Say</span></h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <p>"Burhan delivered an amazing IoT solution for my business. Highly skilled and professional!"</p>
+                <h4>John Doe</h4>
+                <p class="client-title">CEO, TechCorp</p>
+            </div>
+            <div class="testimonial">
+                <p>"His Python expertise transformed our project. Highly recommended!"</p>
+                <h4>Jane Smith</h4>
+                <p class="client-title">Project Manager</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Let’s <span class="highlight">Connect</span></h2>
+        <p>Have a project idea? Let’s discuss it!</p>
+        <form class="contact-form" aria-label="Contact Form">
+            <input type="text" placeholder="Your Name" required aria-label="Name">
+            <input type="email" placeholder="Your Email" required aria-label="Email">
+            <textarea placeholder="Your Message" rows="5" required aria-label="Message"></textarea>
+            <button type="submit" class="contact-button">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Burhan Ali. All Rights Reserved.</p>
+            <ul class="social-links" aria-label="Social Media Links">
+                <li><a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </li>
+                <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
